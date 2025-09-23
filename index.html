@@ -148,7 +148,7 @@
     function checkReady() {
       const guess = document.getElementById("readyInput").value.toLowerCase();
       const msg = document.getElementById("readyMessage");
-      if (guess === readyAnswer) {
+      if (guess.toLowerCase() === readyAnswer.toLowerCase()) {
         msg.textContent = "Yay! Let's start! 🎉";
         setTimeout(() => {
           document.getElementById("ready-check").classList.add("hidden");
