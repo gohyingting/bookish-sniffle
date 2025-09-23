@@ -63,7 +63,7 @@
 
     <!-- Name Check -->
     <div id="name-check">
-      <p>This quiz is only meant for a very special person. I need to double check what your name is just to be sure:</p>
+      <p>This quiz is only meant for a very special person🤫. I need to double check what your name is just to be sure:</p>
       <input type="text" id="nameInput">
       <button onclick="checkName()">Submit</button>
       <br>
@@ -73,7 +73,7 @@
 
     <!-- Age Check -->
     <div id="age-check" class="hidden">
-      <p>Enter your age:</p>
+      <p>Enter your age😄:</p>
       <input type="text" id="ageInput">
       <button onclick="checkAge()">Submit</button>
       <br>
@@ -83,7 +83,7 @@
 
     <!-- Ready Check -->
     <div id="ready-check" class="hidden">
-      <p>Are you ready to choose the activities for your special day?</p>
+      <p>Are you ready to choose the activities for your special day?😛</p>
       <input type="text" id="readyInput">
       <button onclick="checkReady()">Submit</button>
       <br>
@@ -103,7 +103,7 @@
 
     <!-- Feedback -->
     <div id="feedback-section" class="hidden">
-      <p>Any feedback for the mastermind behind your birthday date?</p>
+      <p>Any feedback for the mastermind behind your birthday date🤓?</p>
       <input type="text" id="feedbackInput">
       <button onclick="submitFeedback()">Submit</button>
       <br>
@@ -165,15 +165,15 @@
 
     // ---------- Questions ----------
     const questions = [
-      {prompt: "Q1. Where do you think we'll be going for lunch?", options: ["MBS","Tuas","Pasir Ris"], answer: 0},
-      {prompt: "Q2. So... which restaurant do you think we'll be going to?", options: ["Bread Street Kitch by Gordon Ramsay","Black Tap","Koma"], answer: 2},
-      {prompt: "Q3. I think lunch was pretty good right... Dessert?", options: ["Yes!","Nah"], answer: 0},
-      {prompt: "Q4. Super full tummies now. Shall we go for our next activity?", options: ["Yep, I am so excited ><","Nope, I want to go home now (boo...)"], answer: 0},
-      {prompt: "Q5. Quick question! Do you love your girlfriend?", options: ["Yes. I love her SO MUCH and I would do anything to make her happy."], answer: 0},
-      {prompt: "Q6. Guess what we'll be doing for our next activity?", options: ["Art Science Museum exhibition","Public Garden","Shopping spreeeee"], answer: 1},
-      {prompt: "Q7. Okay! That was so fun! Dinner?", options: ["Yes, I am pretty hungry","Hm... nah (why would you choose this?)"], answer: 0},
-      {prompt: "Q8. Second last question of the day... How would you rate your birthday date?", options: ["0/10, so bad that I would not do it EVER AGAIN :(","5/10, it was meh","10/10, it was great!","EXCEEDED EXPECTATIONS! It was so amazing that the rating is OFF THE CHARTS!"], answer: 3},
-      {prompt: "Q9. Last question! How would you rate this quiz?", options: ["-100/10, I'm such a good coder this is so lousy to me boooo","5/10, a pretty good effort but it could be better","BEST GIFT EVER!"], answer: 2}, 
+      {prompt: "Q1. Where do you think we'll be going for lunch?😋", options: ["MBS","Tuas","Pasir Ris"], answer: 0},
+      {prompt: "Q2. So... which restaurant do you think we'll be going to?🍽️", options: ["Bread Street Kitch by Gordon Ramsay","Black Tap","Koma"], answer: 2},
+      {prompt: "Q3. I think lunch was pretty good right... Dessert?🍦", options: ["Yes!","Nah"], answer: 0},
+      {prompt: "Q4. Super full tummies now. Shall we go for our next activity?😀", options: ["Yep, I am so excited ><","Nope, I want to go home now (boo...)"], answer: 0},
+      {prompt: "Q5. Quick question! Do you love your girlfriend?😍", options: ["Yes. I love her SO MUCH and I would do anything to make her happy."], answer: 0},
+      {prompt: "Q6. Guess what we'll be doing for our next activity?🤠", options: ["Art Science Museum exhibition","Public Garden","Shopping spreeeee"], answer: 1},
+      {prompt: "Q7. Okay! That was so fun! Dinner?🤤", options: ["Yes, I am pretty hungry","Hm... nah (why would you choose this?)"], answer: 0},
+      {prompt: "Q8. Second last question of the day... How would you rate your birthday date?🧐", options: ["0/10, so bad that I would not do it EVER AGAIN :(","5/10, it was meh","10/10, it was great!","EXCEEDED EXPECTATIONS! It was so amazing that the rating is OFF THE CHARTS!"], answer: 3},
+      {prompt: "Q9. Last question! How would you rate this quiz?💯", options: ["-100/10, I'm such a good coder this is so lousy to me boooo","5/10, a pretty good effort but it could be better","BEST GIFT EVER!"], answer: 2}, 
     ];
 
     let currentQuestion = 0;
