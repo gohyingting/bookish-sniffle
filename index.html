@@ -132,7 +132,7 @@
         setTimeout(() => {
           document.getElementById("name-check").classList.add("hidden");
           document.getElementById("age-check").classList.remove("hidden");
-        }, 1000);
+        }, 2000);
       } else {
         msg.textContent = "Hey! That's not right! Try again.";
       }
@@ -146,7 +146,7 @@
         setTimeout(() => {
           document.getElementById("age-check").classList.add("hidden");
           document.getElementById("ready-check").classList.remove("hidden");
-        }, 1000);
+        }, 2000);
       } else {
         msg.textContent = "Hm... you need to try again.";
       }
@@ -237,9 +237,9 @@
         msg.textContent = "Great! You got the right answer! ✅";
         currentQuestion++;
         if (currentQuestion < questions.length) {
-          setTimeout(showQuestion, 1000);
+          setTimeout(showQuestion, 2000);
         } else {
-          setTimeout(showFeedback, 1000);
+          setTimeout(showFeedback, 2000);
         }
       } else {
         msg.textContent = "Oops, try again! ❌";
