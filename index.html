@@ -132,6 +132,7 @@
           document.getElementById("name-check").classList.add("hidden");
           document.getElementById("age-check").classList.remove("hidden");
         }, 1000);
+        playMusic(); // 🎵 start music here
       } else {
         msg.textContent = "Hey! That's not right! Try again.";
       }
@@ -164,7 +165,12 @@
         msg.textContent = "This was not the answer I was expecting! Try again.";
       }
     }
-
+    // ---- Music ----
+    function playMusic() {
+      const music = document.getElementById("bgMusic");
+      music.play();
+    }
+    
     // ---------- Questions ----------
     const questions = [
       {prompt: "Q1. Where do you think we'll be going for lunch?😋", options: ["MBS","Tuas","Pasir Ris"], answer: 0},
