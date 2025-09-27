@@ -213,7 +213,18 @@
         msg.textContent = "Please select an option!";
         return;
       }
-      if (selected === questions[currentQuestion].answer) {
+      const correctAns = questions[currentQuestion].answer;
+  
+      let isCorrect = false;
+      if (Array.isArray(correctAns)) {
+        // If multiple acceptable answers
+        isCorrect = correctAns.includes(selected);
+      } else {
+        // If only one correct answer
+        isCorrect = (selected === correctAns);
+      }
+  
+      if (isCorrect) {
         msg.textContent = "Great! You got the right answer! ✅";
         currentQuestion++;
         if (currentQuestion < questions.length) {
